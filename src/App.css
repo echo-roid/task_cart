@@ -1,0 +1,150 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.wrap_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+.box{
+  height: 200px;
+  width: 30%;
+  margin: 0 auto 20px;
+  border: 1px solid;
+  position: relative;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heading{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: white;
+  background-color: #00000073;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.delete{
+  position: absolute;
+  top: 18px;
+  color: white;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+}
+.delete svg{
+  margin-left: 20px;
+}
+section.modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000c4;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  z-index: 3;
+}
+
+
+.main_modal {
+  width: 70%;
+  margin: auto;
+}
+
+.content {
+  background: white;
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.img_holder{
+  width: 100%;
+  height: 300px;
+}
+.img_holder img{
+  width: 100%;
+  object-fit:contain ;
+  height: 100%;
+}
+
+.cross{
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background-color: white;
+  font-size: 32px;
+}
+
+.img_holder .carousel.carousel-slider {
+  width: 30%!important;
+  height: 228px!important;
+  margin: auto;
+}
+
+.img_holder li.thumb {
+  width: 67px!important;
+  height: 46px!important;
+  margin: auto;
+}
+.img_holder .thumbs{
+  text-align: center!important;
+}
+.counter {
+  position: absolute;
+  bottom: 13px;
+  right: 18px;
+}
+
+.counter .plus_minus {
+  outline: none;
+  border: none;
+  background-color: blue;
+  color: white;
+  width: 28px;
+  padding: 5px 3px;
+  border-radius: 30px;
+}
+
+.counter input{
+  width: 51px;
+  margin: 0 8px;
+}
+
+@media(max-width:768px) 
+{
+  .box {
+    width: 100%;
+  }
+
+  .img_holder .carousel.carousel-slider {
+    width: 100%!important;
+    height: 200px!important;
+  }
+
+  .main_modal {
+    width: 80%;
+  }
+
+  .content {
+    padding: 20px 0px 22px 9px;
+  }
+}
